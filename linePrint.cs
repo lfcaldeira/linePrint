@@ -6,7 +6,7 @@
     {
         static void Main()
         {
-            string folderPath = @"C:\Users\lcaldei\Downloads";
+            string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
             string[] linesToAdd = {
                 "smart sizing:i:1",
                 "desktopwidth:i:1920",
